@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: fit-content;
+    width: 100%;
+}
+
+.header {
+    height: 70px;
+    background-color: #002262;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1520px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav ul {
+
+    display: flex;
+    gap: 20px;
+    font-size: 18.72px;
+    list-style: none;
+}
+
+.nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.principles {
+    background-image: url(images/aircrafts/vliegtuig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 915px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principles h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.principles-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.principle-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 46px 65px;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(27.65px);
+    border-radius: 34px;
+    width: 404px;
+    height: 272px;
+}
+
+.principle-icon {
+    background-color: #FFFFFF;
+    width: 75px;
+    height: 75px;
+    border-radius: 37.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principle-icon span {
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5385B5;
+}
+
+.principle-card h3 {
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18.72px;
+}
+
+.principle-card p {
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.infographic {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17.6px);
+    border-radius: 32px;
+    width: 1520px;
+    height: 272px;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 15px 31px;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+input {
+    height: 31px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    border-color: none;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+
+
+
+.results {
+    flex-direction: column;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+
+
+.trust {
+    width: 100%;
+    height: 425px;
+    background: linear-gradient(180deg, #4C70A0 0%, #003B81 100%);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    color: #F8F9FA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.search-section {
+    background-color: #F8F9FA;
+    background-size: cover;
+    height: 915px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-section {
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.search-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #1c45ff 0%, #fc802e 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s;
+}
