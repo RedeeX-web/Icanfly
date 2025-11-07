@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo.png" alt="ICANFLY">
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#promotions">Акции</a></li>
+                        <li><a href="#search">Поиск</a></li>
+                        <li><a href="booking.html">Регистрация на рейс</a></li>
+                        <li><a href="login.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="principles">
+        <div class="container">
+            <h2>Как это работает</h2>
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <div class="principle-icon"><span>1</span></div>
+                    <h3>Выберите дату</h3>
+                    <p>Выбирайте удобную дату перелета</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon"><span>2</span></div>
+                    <h3>Накопите бронирования</h3>
+                    <p>При накоплении более 50% бронирований рейс подтверждается</p>
+
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon"><span>3</span></div>
+                    <h3>Получите скидку</h3>
+                    <p>Чем больше бронирований, тем ниже стоимость для всех</p>
+                </div>
+            </div>
+
+
+            <div class="infographic">
+                <div class="input-group">
+                    <label for="flight-date">Дата перелета:</label>
+                    <input type="date" id="flight-date">
+                </div>
+                <div class="input-group">
+                    <label for="bookings-count">Количество бронирований:</label>
+                    <input type="number" id="bookings-count" min="0" max="60" value="0">
+                </div>
+                <div class="results">
+                    <div class="result-item">
+                        <span>Вероятность вылета:</span>
+                        <span id="probability">0%</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Стоимость билета:</span>
+                        <span id="price">0 ₽</span>
+                    </div>
+                     <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"
+                        style="width: 23.3333%; background-color: rgb(244, 67, 54);"></div>
+                </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+
+    <section class="trust">
+        <div class="container">
+            <h2>Доверие</h2>
+            <span>Мы используем комфортабельные малобюджетные самолёты Embraer E195 и Airbus A220, которые экономически
+                выгодно эксплуатировать даже с 50% заполнением. Но главное — мы даём пассажирам реальную возможность
+                влиять на судьбу рейса.
+             </span>
+            <span>
+                Мы верим, что расстояние не должно быть преградой для важных моментов жизни. Будь то свадьба близкого
+                человека, деловая встреча, которая может изменить карьеру, или просто долгожданный отпуск.
+            </span>
+            ,<span>"ICANFLY" сегодня
+                Это не просто название. Это девиз каждого нашего пассажира. Это уверенность в том, что твои планы
+                осуществятся. Это сообщество людей, которые понимают: иногда чтобы взлететь, нужно просто поверить в
+                возможность полёта.
+
+                Присоединяйтесь к нам! Докажем вместе, что нет недостижимых направлений — есть лишь неподходящие
+                подходы.</span>
+
+            </div>
+        </div>
+    </section>
+
+
+        <section class="search-section" id="search">
+            <div class="container">
+                <h2>Поиск рейсов</h2>
+                <form class="search-form" action="search.html" method="GET">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="from">Откуда</label>
+                            <input type="text" id="from" name="from" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="to">Куда</label>
+                            <input type="text" id="to" name="to" required>
+                        </div>
+                        
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="passengers">Пассажиры</label>
+                            <select id="passengers" name="passengers">
+                                <option value="1">1 пассажир</option>
+                                <option value="2">2 пассажира</option>
+                                <option value="3">3 пассажира</option>
+                                <option value="4">4 пассажира</option>
+                                <option value="5">5 пассажиров</option>
+                                <option value="6">6 пассажиров</option>
+                                <option value="7">7 пассажиров</option>
+                                <option value="8">8 пассажиров</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="departure">Туда</label>
+                            <input type="date" id="departure" name="departure" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="return">Обратно</label>
+                            <input type="date" id="return" name="return">
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Найти</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <section class="promotions" id="promotions">
+            <div class="container">
+                <h2>Акции</h2>
+                <div class="promotions-grid">
+                    <div class="promotion-card">
+                        <img src="images/promotions/promotion1.jpg" alt="Акция 1">
+                        <h3>Returning and Changing Your Tickets</h3>
+                        <p>The pandemic has changed many travelers’ plans, but we know that it will not last forever.
+                            Once all of this is over, we will continue exploring this world the way we used to.
+                            Special rules that have been developed for this challenging situation will help you cancel
+                            your trip
+                            or postpone it until later.
+                        </p>
+                        <button class="btn-secondary">Подробнее ></button>
+                    </div>
+                    <div class="promotion-card">
+                        <img src="images/promotions/promotion2.jpg" alt="Акция 2">
+                        <h3>Best offers</h3>
+                        <p>To see again the streets that witnessed so much. To hug your beloved ones and look back to
+                            see
+                            what you’ve come through. And to think of new dreams that will be so special!
+                        </p>
+                        <button class="btn-secondary">Подробнее ></button>
+                    </div>
+                    <div class="promotion-card">
+                        <img src="images/promotions/promotion3.jpg" alt="Акция 3">
+                        <h3>See you more often</h3>
+                        <p>Since the beginning of January, we have been expanding the geography of flights in Russia so
+                            that you can
+                            see your loved ones more often. Choose our company to fly to where you are always expected.
+                        </p>
+                        <button class="btn-secondary">Подробнее ></button>
+                    </div>
+                    <div class="promotion-card">
+                        <img src="images/promotions/promotion4.jpg" alt="Акция 4">
+                        <h3>Everything is on again</h3>
+                        <p>From August 10, we will resume flights to Turkey. Flights from Moscow to Antalya will be
+                            operated twice
+                            a day daily, and flights on the Moscow-Dalaman route will be operated three to seven times a
+                            week.
+                        </p>
+                        <button class="btn-secondary">Подробнее ></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscription">
+            <div class="container">
+                <h2>Подпишитесь на закрытые акции</h2>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Введите ваш email" required>
+                    <button type="submit" class="btn-primary">Подписаться</button>
+                </form>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-contact">
+                        <h3>8 (800) 100-10-10</h3>
+                        <p>Круглосуточная поддержка</p>
+                    </div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#about">Главная</a></li>
+                            <li><a href="register.html">Регистрация</a></li>
+                            <li><a href="login.html">Войти</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                            <li><a href="#rules">Новости</a></li>
+                            <li><a href="#rules">Вернуться</a></li>
+                            <li><a href="#rules">Отзывы</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const flightDateInput = document.getElementById('flight-date');
+                const bookingsCountInput = document.getElementById('bookings-count');
+                const probabilityElement = document.getElementById('probability');
+                const priceElement = document.getElementById('price');
+                const progressFill = document.getElementById('progress-fill');
+
+                // Максимальное количество пассажиров
+                const MAX_PASSENGERS = 60;
+                // Минимальный процент для подтверждения рейса
+                const MIN_CONFIRMATION_PERCENT = 50;
+
+                // Функция расчета вероятности вылета
+                function calculateProbability(bookingsCount) {
+                    const percentage = (bookingsCount / MAX_PASSENGERS) * 100;
+
+                    // Простая логика: чем больше заполнение, тем выше вероятность
+                    if (bookingsCount === 0) return 0;
+                    if (percentage < 10) return 10;   // 0-10% заполнения = 10% вероятности
+                    if (percentage < 20) return 20;   // 10-20% = 20% вероятности
+                    if (percentage < 30) return 35;   // 20-30% = 35% вероятности
+                    if (percentage < 40) return 50;   // 30-40% = 50% вероятности
+                    if (percentage < 50) return 70;   // 40-50% = 70% вероятности
+                    return 100; // 50%+ = 100% вероятности (рейс подтвержден)
+                }
+
+                // Функция обновления прогресс-бара
+                function updateProgressBar(bookingsCount) {
+                    const percentage = (bookingsCount / MAX_PASSENGERS) * 100;
+                    progressFill.style.width = percentage + '%';
+
+                    // Меняем цвет в зависимости от заполнения
+                    if (percentage >= 50) {
+                        progressFill.style.backgroundColor = '#4CAF50'; // Зеленый - рейс подтвержден
+                    } else if (percentage >= 30) {
+                        progressFill.style.backgroundColor = '#FF9800'; // Оранжевый - средняя вероятность
+                    } else {
+                        progressFill.style.backgroundColor = '#F44336'; // Красный - низкая вероятность
+                    }
+                }
+
+                // Функция обновления всего интерфейса
+                function updateInterface() {
+                    const bookingsCount = parseInt(bookingsCountInput.value) || 0;
+                    const probability = calculateProbability(bookingsCount);
+                    const percentage = (bookingsCount / MAX_PASSENGERS) * 100;
+
+                    // Обновляем вероятность
+                    probabilityElement.textContent = probability + '%';
+
+                    // Обновляем статус цены (просто фиксированная цена) АРС НАДО ЧТОБ ХОТЯБ СТРЕЛОЧКОЙ ТИПА ПОКАЗЫВАЛОСЬ ВВЕРХ ИЛИ ВНИЗ
+                    priceElement.textContent = '8 500 ₽'; // Базовая цена
+
+                    // Обновляем прогресс-бар
+                    updateProgressBar(bookingsCount);
+
+                    // Добавляем текстовое описание статуса
+                    updateStatusDescription(bookingsCount, percentage);
+                }
+
+                // Функция для текстового описания статуса
+                function updateStatusDescription(bookingsCount, percentage) {
+                    let statusText = '';
+
+                    if (bookingsCount === 0) {
+                        statusText = 'Рейс не подтвержден. Нет бронирований';
+                    } else if (percentage < 30) {
+                        statusText = 'Низкая вероятность вылета. Нужно больше пассажиров';
+                    } else if (percentage < 50) {
+                        statusText = 'Средняя вероятность вылета. Рейс близок к подтверждению';
+                    } else {
+                        statusText = 'Рейс подтвержден! Вылет гарантирован';
+                    }
+
+                    // Обновляем или создаем элемент для статуса
+                    let statusElement = document.getElementById('flight-status');
+                    if (!statusElement) {
+                        statusElement = document.createElement('div');
+                        statusElement.id = 'flight-status';
+                        statusElement.style.marginTop = '10px';
+                        statusElement.style.fontWeight = 'bold';
+                        statusElement.style.textAlign = 'center';
+                        document.querySelector('.results').appendChild(statusElement);
+                    }
+                    statusElement.textContent = statusText;
+
+                    // Меняем цвет текста в зависимости от статуса
+                    if (percentage >= 50) {
+                        statusElement.style.color = '#4CAF50';
+                    } else if (percentage >= 30) {
+                        statusElement.style.color = '#FF9800';
+                    } else {
+                        statusElement.style.color = '#F44336';
+                    }
+                }
+
+                // Обработчики событий
+                bookingsCountInput.addEventListener('input', function () {
+                    // Ограничиваем максимальное значение
+                    if (this.value > MAX_PASSENGERS) {
+                        this.value = MAX_PASSENGERS;
+                    }
+                    if (this.value < 0) {
+                        this.value = 0;
+                    }
+                    updateInterface();
+                });
+
+                flightDateInput.addEventListener('change', function () {
+                    // Можно добавить логику для разных дат, если нужно
+                    updateInterface();
+                });
+
+                // Инициализация при загрузке
+                updateInterface();
+            });
+        </script>
+
+        <script>
+            document.querySelector('.search-form').addEventListener('submit', function () {
+                localStorage.setItem("search_from", document.getElementById('from').value);
+                localStorage.setItem("search_to", document.getElementById('to').value);
+                localStorage.setItem("search_departure", document.getElementById('departure').value);
+                localStorage.setItem("search_return", document.getElementById('return').value);
+                localStorage.setItem("search_passengers", document.getElementById('passengers').value);
+            });
+        </script>
+
+</body>
+
+</html>
